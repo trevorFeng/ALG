@@ -13,7 +13,7 @@ public class Test2 {
 
     /**
      * 典型的动态规划
-     * 动态规划方程：P[i][j] = P[i-1][j] + P[i][j-1]
+     * 动态规划方程：P[i][j] = P[i-1][j] + P[i][j-1]即当前路径和等于左边的路径和加上上边的路径和
      * P[i][j]表示走到当前点总共的路径
      * * @param m
      * @param n
@@ -31,7 +31,6 @@ public class Test2 {
                 }else {
                     p [i][j] = p[i-1][j] + p[i][j-1];
                 }
-
             }
         }
         return p[m-1][n-1];
