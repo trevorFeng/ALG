@@ -25,7 +25,7 @@ public class Test2 {
         }
         int[][] p = new int[m][n];
         for (int i = 0; i < m ;i++) {
-            for (int j = 0 ; i< n ;j++) {
+            for (int j = 0 ; j< n ;j++) {
                 if (i == 0 || j == 0) {
                     p[i][j] = 0;
                 }else {
